@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+header a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Objective Section */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #2c3e50;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Print Styling for PDF */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, section {
+        page-break-inside: avoid;
+    }
+}
